@@ -66,7 +66,7 @@ So that I can easily find and book the necessary resources.
 
 
 ## Link To Deployed Website
-**Deployed Link-
+**Deployed Link-https://my-rentix-ac0bf30ab133.herokuapp.com/
 
 
 ## Installation and Usage
