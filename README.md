@@ -13,7 +13,6 @@
 - [Installation and Usage](#installation-and-usage)
 - [Tests](#tests)
 - [Technologies Used](#technologies-used)
-- [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
 
@@ -98,8 +97,7 @@ MySQL: The API integrates with a MySQL database to store and retrieve data relat
 
 Authentication and Authorization: The API implements token-based authentication using JSON Web Tokens (JWT) to ensure secure user access to the system's resources.
 
-## Credits
-- Rentix Contributors: Amrit, Cynthia,Matthew, Rohit, Sagenthave
+
 
 ## License
 
@@ -107,5 +105,7 @@ This project is licensed under the MIT license. For more information about the l
 
 
 ## Questions
- If you have encounter any issues or have any Questions Regarding this Project. Connect with us by generating issue on
- [Issues Link](https://github.com/cynthiamory/Rentix/issues)
+ If you have encounter any issues or have any Questions Regarding this Project. Connect with me at
+
+- Email -Amrit.gill3005@gmail.com 
+- Github - [Amritpal-Kaur0](https://github.com/Amritpal-Kaur0) 
