@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="icon" type="image/x-icon" href="/images/2.png">
+    <title>Rentix!</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="Primary-Header">
+
+        <a href="/">
+            <h1 class="logo-header">RentiX</h1>
+        </a>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href="/"><i class="fa fa-home site-nav--icon"></i>Home</a></li>
+                <li><a href="#aLink"><i class="fa fa-info site-nav--icon"></i>About</a></li>
+                <li><a href="#cLink"><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+
+                {{#if loggedIn}}
+                <li class="dropdown"><a href="/uploadTran"><i class="fa fa-envelope site-nav--icon"></i>Post &#8582;</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="/uploadTran" class="nav-link">Car</a></li>
+                        <li><a href="/uploadAcc" class="nav-link">Accomodation</a></li>
+                    </ul>
+
+                </li>
+                {{/if}}
+                <li class="dropdown">
+                    <a href="#">Profile &#8582;</a>
+
+                    <ul class="dropdown-content">
+                        <li><a href="/Login" class="nav-link">SignUp</a></li>
+
+                        {{#if loggedIn}}
+                        <li><a href="/logout" id="logout" class="nav-link">Logout</a></li>
+                        {{else}}
+                        <li><a href="/Login" class="nav-link">LogIn</a></li>
+                        {{/if}}
+
+                    </ul>
+
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+
+    </header>
+
+    {{{body}}}
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="Primary-footer">
+
+       <div class="footer-column">
+            <ul>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">MEMBERSHIP</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Join Now</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Book an Appointment</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Training Programs</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">My Rentix</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">MEMBERSHIP</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Join Now</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Book an Appointment</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Training Programs</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">My Rentix</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">MEMBERSHIP</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Join Now</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Book an Appointment</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Training Programs</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">My Rentix</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+
+            </ul>
+        </div> 
+        <div class="footer-column">
+            <ul>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">MEMBERSHIP</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Join Now</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Book an Appointment</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Training Programs</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">My Rentix</a>
+                    <span class="footer-link-underline"></span>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="News-Letter">
+            <h2 class="footer-letter">Connect With Us!</h2>
+            <p>Sign-up for our newsletter to get sneak peak of sales, exclusive deals, and more!</p>
+            <input type="email" class="email">
+
+            <button class="signup">Sign-up</button>
+            {{!-- <div class="Socials">
+                <a href="#"><img class="Socials-Png" src="./images/facebook.png" alt="Facebook-Logo" srcset=""></a>
+                <a href="#"><img class="Socials-Png" src="./images/IG.png.webp" alt="Instagram-Logo" srcset=""></a>
+                <a href="#"> <img class="Socials-Png" src="./images/twitter2.png" alt="Twitter-Logo" srcset=""></a>
+                <a href="#"><img class="Socials-Png" src="./images/youtube.jpeg" alt="Youtube-Logo" srcset=""></a>
+
+            </div> --}}
+        </div>
+    </footer>
+{{!-- <script src="/js/index.js"></script> --}}
+    {{#if loggedIn}}
+    <script src="/js/logout.js"></script>
+    {{/if}}
+
+</body>
+
+</html>

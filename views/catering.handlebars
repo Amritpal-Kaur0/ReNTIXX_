@@ -1,0 +1,46 @@
+<img class="accomodation-Logo" src="/images/pexels-anna-guerrero-1956974.jpg" alt="" srcset="">
+<main class = "Catering-Main">
+    <h2 class="Acc-Writing">Our Pride</h2>
+    <section class="Acc-Main">
+    
+
+
+
+{{#if cateringserial}}
+
+ <main class = "wrap-id">
+   <section class = "wrap-id">
+     <div class="Acc-cards-id">
+                <img class="cards-img-id" src="/images/Catering-Images/{{ cateringserial.filename}}" alt="">
+     
+            </div>
+              <div class="Acc-Info-id">
+                  <a class="Cards-Title-id" href="/api/Catering/{{id}}">{{cateringserial.dish_name}}</a>
+                  <p class="Cards-Title-id-des">{{cateringserial.dish_description}}</p>
+                    <p class="Cards-Location-id">{{cateringserial.menu}}</p>
+                    <p class="price-id">$ {{cateringserial.price}}</p>
+                     <a class = "book-id" href="">Book Now</a>
+              </div>
+   </section>
+ </main>
+
+{{else}}
+
+
+
+        {{#each catering}}
+    
+        <div class="Acc-cards">
+            <img class="cards-img" src="/images/Catering-Images/{{ filename}}" alt="">
+    
+        </div>
+          <div class = "Acc-Info">
+              <a class="Cards-Title" href="/api/Catering/{{id}}">{{dish_name}}</a>
+                <p class="Cards-Location">{{menu}}</p>
+                <p class="price">$ {{price}}</p>
+          </div>
+    
+        {{/each}}
+        {{/if}}
+    </section>
+</main>

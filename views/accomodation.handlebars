@@ -1,0 +1,44 @@
+
+<script src="/js/uploadAcc.js"></script> 
+
+<img class="accomodation-Logo" src="/images/lawrence-chismorie-6fE0xjiZvrs-unsplash.jpg" alt="" srcset="">
+
+<main class="Accomodation-Main">
+  <h2 class="Acc-Writing">Our Properties</h2>
+  <section class="Acc-Main">
+
+
+
+
+    
+    {{#if accomodationserial}}
+      <main class = "wrap-id">
+        <section class = "section-id">
+          <div class="Acc-cards-id">
+            <img id="previewImage" class="cards-img-id" src="/images/Accomadation/{{accomodationserial.accommodation_filename}}" alt="">
+          </div>
+          <div class="Acc-Info-id">
+            <a class="Cards-Title-id" href="/api/accomodation/{{accomodationserial.id}}">{{ll}}{{accomodationserial.accommodation_place}}</a>
+            <p class="Cards-Title-id-des">{{accomodationserial.accommodation_description}}</p>
+            <p class="Cards-Location-id"><span><img class="pin" src="/images/pin.png" alt="" srcset=""></span>{{accomodationserial.accommodation_location}}</p>
+            <p class="price-id">{{gg}} {{ accomodationserial.price}}</p>
+            <a class = "book-id" href="">Book Now</a>
+          </div>
+        </section>
+      </main>
+    {{else}}
+      {{#each Accomodationserial}}
+        <div class="Acc-cards">
+          <img id="previewImage" class="cards-img" src="/images/Accomadation/{{accommodation_filename}}" alt="{{accommodation_filename}}">
+        </div>
+        <div class="Acc-Info">
+          <a class="Cards-Title" href="/api/accomodation/{{id}}"> {{accommodation_place}}</a>
+          <p class="Cards-Location"><span><img class="pin" src="/images/pin.png" alt="" srcset=""></span>{{accommodation_location}}</p>
+          
+          <p class="price">$ {{price}}</p>
+        </div>
+      {{/each}}
+      
+    {{/if}}
+  </section>
+</main>
