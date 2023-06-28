@@ -33,9 +33,6 @@ router.get('/Login', (req, res) => {
     res.redirect('/');
     return;
   }
-
-
-
   res.render('login');
 });
 
