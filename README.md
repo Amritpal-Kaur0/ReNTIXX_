@@ -58,6 +58,9 @@ So that I can easily find and book the necessary resources.
 ```
 
 ## Preview Images
+
+https://drive.google.com/file/d/1J7_rENGB2q-rIY0wWvgVidVawf_rlso_/view?usp=sharing
+https://drive.google.com/file/d/1_xasCL99GfiIKVEHnkGrnXiUPRDHwahc/view?usp=sharing
 - ## Preview gif 
 <img src="./public/images/Rentix!%20(1).gif" width="600" height="300" />
 
